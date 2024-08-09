@@ -1,0 +1,28 @@
+.body {
+  min-height: 100vh;
+  background-color: var(--body-color);
+  padding:25px 60px;
+}
+
+.card1__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.insta{ 
+  color: rgba(227, 171, 124, 1);
+    
+}
+
+@media screen and (max-width: 1024px){
+    .card1__container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+@media screen and (max-width: 624px){
+    .card1__container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+}
